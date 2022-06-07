@@ -23,3 +23,7 @@ Last but not least, a clean and simple dashboard is presented with various colou
 •	Run python manage.py createsuperuser and enter the required data. 
 •	After that run python manage.py runserver and head over to the browser to http://127.0.0.1:8000 and login.
 •	Superuser/Admin can add another user, add books, update books, delete the book and view all books.
+
+# Available admin details
+Username=admin
+Password=book12345
