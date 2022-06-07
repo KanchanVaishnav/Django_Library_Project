@@ -26,4 +26,5 @@ Last but not least, a clean and simple dashboard is presented with various colou
 
 # Available admin details
 Username=admin
+and
 Password=book12345
