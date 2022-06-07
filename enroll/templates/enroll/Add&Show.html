@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% extends 'enroll/base.html' %}
+<html lang="en" dir="ltr">
+<body>
+ {% block content%}
+ 
+  <div class="row">
+    <div class="col-sm-4">
+       <h4 style="color:blue" class="alert alert-info"><b>ADD NEW BOOK</b></h4></br>
+        <form action="" method="POST">
+          {% csrf_token %}
+          {{form.as_p}}
+          <input type="submit" class="btn btn-success" value="Add">
+        </br></br></br></br></br></br></br></br></br>
+          <div>
+            <a href="{% url 'logout' %}" class="btn btn-primary btn-sm">Logout from System</a>
+           </div>
+        </form>
+    </div>
+
+    <div class="col-sm-8">
+        <h4 style="color:blue" class="alert alert-info"><b>SHOW ALL BOOKS</b></h4>
+        {% if stu %}
+        <table class="table table-hover" border="1">
+            <thead>
+            <tr>
+            <th scope="col">Name</th>
+            <th scope="col">ISBN</th>
+            <th scope="col">Author</th>
+            <th scope="col">Category</th>
+            <th scope="col">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+              {% for st in stu %}
+                <tr>
+                 <td>{{st.name}}</td>
+                 <td>{{st.isbn}}</td>
+                 <td>{{st.author}}</td>
+                 <td>{{st.category}}</td>
+                 <td>
+                  <a href="{% url 'updatedata' st.id %}" class="btn btn-warning btn-sm">Update</a>
+                  <form action="{% url 'deletedata' st.id %}" method="post" class="btn-group" role="group">
+                  {% csrf_token %}
+                  <input type="submit" class="btn btn-danger" value="Delete">
+                  </form>
+                 </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+            </table>
+        {% else %}
+        <h4 class="text-center alert alert-warning"><b>No Record</b></h4>
+        {% endif %}
+
+    </div>
+</div>
+{% endblock content%}
+  </body>
+</html>
