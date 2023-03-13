@@ -16,7 +16,6 @@ Last but not least, a clean and simple dashboard is presented with various colou
 •	List of all Books
 
 # Instruction to run project:
-•	run pip install -r requirements.txt to required settings. 
 •	Then run python manage.py makemigration 
 •	python manage.py migrate
 •	Finally, it's time to create superuser/admin who will be managing students and books! 
