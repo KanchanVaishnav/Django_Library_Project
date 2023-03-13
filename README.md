@@ -8,22 +8,22 @@ This library management system project in Python & Django focuses mainly on deal
 
 Last but not least, a clean and simple dashboard is presented with various colour combinations for greater user experience while using this Online Library Management System Project in Python Django Framework. For its UI elements, a free open-source CSS, JS, Bootstrap is on board.
 
-# Available Feature in project:
-•	Admin Panel
-•	Add Books
-•	Update Book
-•	Delete Book
-•	List of all Books
+# Available Feature in project:               
+•	Admin Panel               
+•	Add Books              
+•	Update Book             
+•	Delete Book             
+•	List of all Books                               
 
-# Instruction to run project:
-•	Then run python manage.py makemigration 
-•	python manage.py migrate
-•	Finally, it's time to create superuser/admin who will be managing students and books! 
-•	Run python manage.py createsuperuser and enter the required data. 
-•	After that run python manage.py runserver and head over to the browser to http://127.0.0.1:8000 and login.
-•	Superuser/Admin can add another user, add books, update books, delete the book and view all books.
+# Instruction to run project:                
+•	Then run python manage.py makemigration                  
+•	python manage.py migrate                       
+•	Finally, it's time to create superuser/admin who will be managing students and books!                   
+•	Run python manage.py createsuperuser and enter the required data.                          
+•	After that run python manage.py runserver and head over to the browser to http://127.0.0.1:8000 and login.                
+•	Superuser/Admin can add another user, add books, update books, delete the book and view all books.                          
 
-# Available admin details
-Username=admin
-and
-Password=book12345
+# Available admin details              
+Username=admin                          
+and                            
+Password=book12345                             
